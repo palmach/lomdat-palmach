@@ -291,17 +291,16 @@ body {
 }
 
 .opening-text{
-    background-image: url(media/opening-headline.png);
+      background-image: url(media/opening-headline.png);
     background-size: 100% 100%;
     width: 82.5%;
     height: 30vh;
+    margin: 2vh;
 }
 
 .start-btn {
     width: 22vw;
-    /* position: absolute;
-    bottom: 10vh;
-    left: 39vw; */
+    margin: 4vh;
 }
 
 
