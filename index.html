@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palmach</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/jquery-3.5.1.min.js"></script>
+    <script src="assets/jquery-ui.min.js"></script>
+    <script src="assets/gsap.js"></script>
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div id="opening" class="background page">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back start-btn">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3">התחל לומדה</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div id="before-part" class="background page">
+        <div id="headline-before" class="headline"></div>
+        <div id="text-before" class="text"></div>
+        <div class="good-luck-text text">בהצלחה!</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back button-before ">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3 before-btn-text">להוראות</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div id="choice-part" class="background page">
+        <div id="gen-container">
+            <div id="girl-big" class="button choice"></div>
+            <div id="boy-big" class="button choice"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back button-choice">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3">בואו נתחיל</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div id="map-part">
+        <div id="headline-map" class="headline"></div>
+        <div id="step1" class="button"></div>
+        <div id="bubble"></div>
+        <div id="map">
+        </div>
+        <div id="character" class="character"></div>
+    </div>
+
+    <div id="explain-mission" class="background page">
+        <div id="exit-btn" class="button exit"></div>
+        <div id="text-explain"></div>
+        <div id="arrow-btn" class="button"></div>
+    </div>
+
+    <!-- משימה ראשונה -->
+    <div id="mission1" class="page">
+        <div id="years-part"></div>
+        <div id="events-ans-part"></div>
+        <div id="events-part"></div>
+    </div>
+
+    <!-- משימה שנים -->
+    <div id="mission2" class="page">
+        <audio controls id="audio">
+            <source src="media/mish2/song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="song"></div>
+        <div id="landing-aria-song">
+            <div id="ans-landing1" class="land-song ui-widget-header "></div>
+            <div id="ans-landing2" class="land-song ui-widget-header "></div>
+            <div id="ans-landing3" class="land-song ui-widget-header "></div>
+            <div id="ans-landing4" class="land-song ui-widget-header "></div>
+        </div>
+        <div id="draggind-aria-song">
+            <div id="ans-drag3" class="drag-song button ui-widget-content text">מתאר את היכולות הנפשיות והגופניות של
+                חברי הפלמ"ח שאותן יפעילו בשירותם. תנועה בכל נתיב גאוגרפי ללא מורא מהאויב, תוך חתירה למפגש חזיתי עמו.
+            </div>
+            <div id="ans-drag4" class="drag-song button ui-widget-content text">מתאר את מידות הראשוניות, את הפעולה
+                החלוצית, ואת המחויבות להתגייסות מהירה וזריזה לכל מטלה אשר תדרש, בגלוי ובחשאי.</div>
+            <div id="ans-drag2" class="drag-song button ui-widget-content text">על אהבת ארץ ישראל מכל עבריה- במזרח:
+                מדבר, במערב: הים התיכון, בצפון: מטולה ובדרום: הנגב. אל משמר הארץ מגויסים חברי הפלמ"ח החמושים.</div>
+            <div id="ans-drag1" class="drag-song button ui-widget-content text">פירוט יכולת העמידה במצבי משבר ומצוקה,
+                הצייתנות לפקדה ולצו המפקדים, והמסירות המתמדת.</div>
+        </div>
+        <div id="next-btn" class="button"> next</div>
+    </div>
+
+    <!-- משימה 3 -->
+    <div id="mission3" class="page">
+        <div id="info-btn" class="button"></div>
+        <div id="dictionery"></div>
+        <div id="secret-sentenc"></div>
+        <div id="input-part">
+            <div id="word1"></div>
+            <div id="word2"></div>
+            <div id="word3"></div>
+            <div id="word4"></div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back cheack-btn">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3">בדיקה</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div id="mission4" class="page">
+        <div id="placment-mape">
+            <div id="map-landing1" class="land-map ui-widget-header "></div>
+            <div id="map-landing2" class="land-map ui-widget-header "></div>
+            <div id="map-landing3" class="land-map ui-widget-header "></div>
+            <div id="map-landing4" class="land-map ui-widget-header "></div>
+            <div id="map-landing5" class="land-map ui-widget-header "></div>
+            <div id="map-landing6" class="land-map ui-widget-header "></div>
+            <div id="map-landing7" class="land-map ui-widget-header "></div>
+            <div id="map-landing8" class="land-map ui-widget-header "></div>
+            <div id="map-landing9" class="land-map ui-widget-header "></div>
+        </div>
+        <div id="places-drag"></div>
+    </div>
+    <div id="explain-ans4">
+        <div id="text-discrip4" class="text"></div>
+    </div>
+
+    <div id="mission5" class="page">
+        <div id="question-cont">
+            <h1 id="question" class="text"></h1>
+
+        </div>
+        <div id="answers-part">
+            <p class="ans button text" id="answer1"></p>
+            <p class="ans button text" id="answer2"></p>
+            <p class="ans button text" id="answer3"></p>
+            <p class="ans button text" id="answer4"></p>
+        </div>
+        <div id="question-num"></div>
+    </div>
+    <!-- סיום -->
+    <div id="end-part" class="page end-pages">
+        <div id="quote" class="text"></div>
+        <div id="end-text" class="text"></div>
+        <div id="end-character" class="character"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back to-end-btn ">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3">המשך</text>
+                </g>
+            </g>
+        </svg>
+
+    </div>
+    <div id="end-points-part" class="page end-pages">
+        <div class="end-score-text"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back about-btn ">
+            <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                    <path class="cls-1"
+                        d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                    <path class="cls-2"
+                        d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                    <path class="cls-1"
+                        d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                        class="cls-3">אודות</text>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div id="about-page" class="page end-pages"></div>
+
+    <!-- כללי -->
+    <div id="general-icons" class="page">
+        <div id="headline-mis" class="headline"></div>
+        <div id="map-btn" class="button"></div>
+        <div id="timer"></div>
+    </div>
+    <div id="small-map">
+        <div id="small1" class="num"></div>
+        <div id="small2" class="num"></div>
+        <div id="small3" class="num"></div>
+        <div id="small4" class="num"></div>
+        <div id="small5" class="num"></div>
+    </div>
+
+    <div id="timer-message" class="message-back">
+        <div class="timer-text-part">
+            <div class="timer-text finish-text text">
+                <p>אוי לא נגמר הזמן!</p>
+                <p>אבל אל חשש עדיין תוכלו להמשיך</p>
+                <p>לענות על השאלות</p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back continue-btn ">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1"
+                            d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                        <path class="cls-2"
+                            d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                        <path class="cls-1"
+                            d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                            class="cls-3">בואו נמשיך</text>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div id="character-timer" class="character"></div>
+    </div>
+
+    <div id="finish-mish" class="message-back">
+        <div id="character-finish" class="character"></div>
+        <div class="finish-text-part">
+            <div class="finish-text text"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457.9 101" class="button button-back mis-finish-btn ">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1"
+                            d="M410.7,101H47.3A47.33,47.33,0,0,1,0,53.7V47.3A47.33,47.33,0,0,1,47.3,0H410.6a47.33,47.33,0,0,1,47.3,47.3v6.4A47.18,47.18,0,0,1,410.7,101Z" />
+                        <path class="cls-2"
+                            d="M403,101H47.3A47.33,47.33,0,0,1,0,53.7H0A47.33,47.33,0,0,1,47.3,6.4H402.9a47.33,47.33,0,0,1,47.3,47.3h0A47.18,47.18,0,0,1,403,101Z" />
+                        <path class="cls-1"
+                            d="M398.8,91c-37.4,2.1-74.8,3.2-112.2,4l-14,.3-14,.2-28.1.4-56.1.3c-18.7-.1-37.4-.1-56.1-.3l-28.1-.4-14-.2-14-.3-7-.1c-2.4-.1-4.6,0-7.2-.3a42.15,42.15,0,0,1-14.8-3.9A42.9,42.9,0,0,1,12.3,69.6,40.71,40.71,0,0,1,8.7,55.2l-.1-3.7c0-1.2,0-2.3.1-3.6a35.9,35.9,0,0,1,1.2-7.3,30.88,30.88,0,0,1,2.6-6.8,35.5,35.5,0,0,1,3.8-6.2,28.39,28.39,0,0,1,11.2-8.8h0c.2-.1.3,0,.4.2s0,.3-.1.4a28.2,28.2,0,0,0-10.3,9.1,32.89,32.89,0,0,0-3.4,6.1,36.52,36.52,0,0,0-2.2,6.6c-1.1,4.5-1,9.2-.7,13.9A39.85,39.85,0,0,0,34.8,87.2a41.06,41.06,0,0,0,13.4,3.2c2.3.2,4.7.1,7,.1h7l112.2-.1,224.5.3a.27.27,0,0,1,.3.3c-.1-.1-.2,0-.4,0Z" />
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2d2015"
+                            class="cls-3">בואו נמשיך</text>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div id="white-back">
+        <div id="explain-ans">
+            <div id="exit-explain" class="button exit"></div>
+            <div id="text-discrip" class="text"></div>
+        </div>
+    </div>
+
+</body>
+</html>

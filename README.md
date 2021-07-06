@@ -1,1 +1,0 @@
-# lomdat-palmach
