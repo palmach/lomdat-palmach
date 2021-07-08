@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: endScoreFont;
-    src: url(fonts/AAAAlmoni-black3.otf),url(fonts/AAAAlmoni-black3.eot), url(fonts/AAAAlmoni-black3.ttf);
+    src: url(fonts/AAAAlmoni-black3.otf),url(fonts/AAAAlmoni-black3.eot), url(fonts/AAAAlmoni-black3.tt);
 }
 @font-face {
     font-family: explain-font;
@@ -42,7 +42,6 @@ body {
     font-size: 4vw;
 }
 
-
 .button-back{
     width: 24vw;
 }
@@ -54,9 +53,7 @@ body {
     width: 21vw;
 }
 
-
 /* כללי */
-
 .page {
     display: none;
 }
@@ -291,7 +288,7 @@ body {
 }
 
 .opening-text{
-      background-image: url(media/opening-headline.png);
+    background-image: url(media/opening-headline.png);
     background-size: 100% 100%;
     width: 82.5%;
     height: 30vh;
@@ -299,8 +296,8 @@ body {
 }
 
 .start-btn {
-    width: 22vw;
     margin: 2vh;
+    width: 22vw;
 }
 
 
@@ -373,6 +370,7 @@ body {
     bottom: 18.5vh;
     background-size: 100% 100%;
     left: 42vw;
+    display: none;
 }
 
 #character-timer {
@@ -492,7 +490,7 @@ body {
     padding: 2.2vh 1vw;
     background-size: 100% 100%;
     background-image: url(media/mish1/event-back.png);
-    font-size: calc(1.98vw - 8px);
+    font-size: 2.5vh;
     text-align: center;
     display: flex;
     padding: 2vh 1.2vw;
@@ -506,7 +504,7 @@ body {
     padding: 2vh 1.2vw;
     background-size: 100% 100%;
     background-image: url(media/mish1/year-back.png);
-    font-size: calc(1.98vw - 7px);
+    font-size: 2.5vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -632,7 +630,7 @@ body {
 .drag-song {
     display: flex;
     width: 21vw;
-    height: 14vh;
+    height: 13.5vh;
     background-image: url(media/mish2/drag-song.png);
     background-color: rgba(255, 255, 255, 0);
     background-size: 100% 100%;
@@ -640,6 +638,7 @@ body {
     padding: 1vw;
     align-items: center;
     text-align: center;
+    border: rgba(255, 255, 255, 0);
 }
 
 #next-btn {
@@ -661,7 +660,6 @@ body {
 #info-btn:hover {
     background-image: url(media/mish3/i-hover.png);
     background-size: 100% 100%;
-
 }
 
 #dictionery {
@@ -753,7 +751,7 @@ body {
     background-image: url(media/mish4/word-explain.png);
     background-size: 100% 100%;
     display: none;
-    font-size: 2vw;
+    font-size: 1.8vw;
     padding: 3vh;
     z-index: 1;
     padding-bottom: 7.5vh;
@@ -808,7 +806,7 @@ body {
 
 .placed-on-map{                
     width: 6.2vw;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     height: 3.3vh;
     right: 2vw;
     margin: 0vh;
@@ -942,9 +940,9 @@ body {
     font-family: explain-font;
     font-size: 2.4vw;
     width: 46vw;
-    height: 47vh;
+    height: fit-content;
     position: absolute;
-    top: 36vh;
+    top: 33vh;
     line-height: 4.25vh;
     left: 39vw;
     margin: 0vh;
@@ -1044,5 +1042,8 @@ body {
         width: 6.1vw;
         font-size: 1.2vw;
         height: 3.4vh;
+    }
+    .drag-song {
+        height: 14.2vh;
     }
 }
