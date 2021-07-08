@@ -767,17 +767,8 @@ function mission4() {
             $("#" + strMovedPeregraf).draggable({ revert: "false" });
             // שאם נניח במקום הנכון הוא לא יובל לזוז ואם הוא טועה שיחזור למקום    
             if (this.id.charAt(11) === strMovedPeregraf.charAt(8)) {
-                // $("#" + strMovedPeregraf).css({
-                //     "width": "6.45vw",
-                //     "font-size": "1.3vw",
-                //     "height": "4.1vh",
-                //     "right": "2vw",
-                //     "top": "2vh",
-                //     "margin": "0vh"
-                // });
                 $("#" + strMovedPeregraf).addClass("placed-on-map");
                 $(this).append(ui.draggable.css('position', 'static')); // שלא יזוז אחרי שיניחו אותו
-                bTimePause = false;
                 setTimeout(function () {
                     if (nMissionClickSum === 9) {
                         $("#map-btn").off("mouseover");
@@ -834,7 +825,6 @@ function changeInfo() {
     for (var i = 1; i < 5; i++) {
         $("#answer" + i).text(arrM5Questions[nCurrentQuestion][String(i)]);
     }
-
     $(".ans").on("click", checkAnswer5);
 }
 
@@ -868,8 +858,6 @@ function checkAnswer5(event) {
             if (nCurrentQuestion > arrM5Questions.length - 1) {
                 setTimeout(function () {
                     bTimeEnd = false;
-                    $(event.target).removeClass("bad-option");
-                    $("#answer" + arrM5Questions[nCurrentQuestion - 1].correctAns).removeClass("good-option");
                     setTimeout(function () {
                         showScore();
                     }, 1000);
@@ -877,6 +865,9 @@ function checkAnswer5(event) {
                 }, 1000);
             }
             else {
+                nMin = 0;
+                nSec = 30;
+                strSec = "30";  
                 bTimePause = true;
                 $(event.target).removeClass("bad-option");
                 $("#answer" + arrM5Questions[nCurrentQuestion - 1].correctAns).removeClass("good-option");
@@ -889,9 +880,6 @@ function checkAnswer5(event) {
 function restartTimer() {
     bTimeEnd = true;
     bTimePause = true;
-    nMin = 0;
-    nSec = 30;
-    strSec = "30";
 }
 
 var strEndText;
@@ -923,7 +911,6 @@ function startEnd(event) {
 
 function timer() {
     if(pageCounter===7){
-        console.log(555);
     }
     if (bTimeEnd && bTimePause) {
         if (nSec < 10) {
